@@ -1,7 +1,7 @@
 
 import llama
 
-MODEL = 'decapoda-research/llama-7b-hf-int4'
+MODEL = 'decapoda-research/llama-smallint-pt'
 REVISION = '84fd0de2f666324fe13da5642b047be4d55b5982'
 
 tokenizer = llama.LLaMATokenizer.from_pretrained(MODEL, revision=REVISION)
