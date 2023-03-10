@@ -1,8 +1,8 @@
 
 import llama
 
-MODEL = 'decapoda-research/llama-smallint-pt'
-REVISION = '84fd0de2f666324fe13da5642b047be4d55b5982'
+MODEL = 'decapoda-research/llama-7b-hf-int4'
+REVISION = 'e04951db15dbc9d97ccb84dc2a50ec867a4f3ff8'
 
 tokenizer = llama.LLaMATokenizer.from_pretrained(MODEL, revision=REVISION)
 model = llama.LLaMAForCausalLM.from_pretrained(MODEL, low_cpu_mem_usage = True, revision=REVISION).half()
